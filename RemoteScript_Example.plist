@@ -11,10 +11,10 @@ http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness
 
 cron "0 9,18 * * 1-5" script-path=https://raw.githubusercontent.com/yichahucha/surge/master/clock_in.js
 
-cron "55 21 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 http-request https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 http-response ^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/91ShortVideo.js
 
-cron "45 7,21 * * *" script-path=https://raw.githubusercontent.com/popzone1979/Loon/master/weather_pro.js
+cron "05 7,22 * * *" script-path=https://raw.githubusercontent.com/popzone1979/Loon/master/weather_pro_loon.js
