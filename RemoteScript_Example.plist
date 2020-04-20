@@ -35,4 +35,3 @@ http-request ^https:\/\/luckman.suning.com\/luck-web\/sign\/api\/clock_sign.do s
 http-request ^https:\/\/sign.suning.com\/sign-web\/m\/promotion\/sign\/doSign.do script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js,tag=苏宁易购Cookie
 http-request ^https:\/\/gameapi.suning.com\/sngame-web\/(api\/signin\/private\/customerSignOperation.do|gateway\/api\/queryPrize.do) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.cookie.js,tag=苏宁易购Cookie
 
-cron "0 7,22 * * *" script-path=https://raw.githubusercontent.com/popzone1979/Loon/master/checkin.js,tag=流量提醒
